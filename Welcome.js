@@ -2,7 +2,10 @@ import React, {Component} from "react";
 
 class Welcome extends Component {
     render() {
-        return <h1>{this.props.name} a . k t {this.props.userName}</h1>
+        const {name,userName} = this.props
+        return (
+            <h1>Welcome {name} a . k t {userName}</h1>
+        )
     }
 }
 export default Welcome;
