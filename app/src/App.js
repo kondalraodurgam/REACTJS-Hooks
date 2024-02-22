@@ -15,14 +15,14 @@ class App extends Component {
       <div className="App">
         {/* <Greet name = "kondal" userName = "Batman" >
 					<p>this is child components</p>
-				</Greet>
-				<Greet name ="kavitha" userName="SuperMan">
-					<button>Add Sample child</button>
-				</Greet>
-				<Greet name ="Umaaa" userName="wornder woner"/>
-				<Welcome name ="one" userName="FirstUser"/>
-				<Welcome name ="two" userName="Second User"/>
-				<Welcome name ="Three" userName="Third USerName"/> */}
+	</Greet>
+	<Greet name ="kavitha" userName="SuperMan">
+		<button>Add Sample child</button>
+	</Greet>
+	<Greet name ="Umaaa" userName="wornder woner"/>
+	<Welcome name ="one" userName="FirstUser"/>
+	<Welcome name ="two" userName="Second User"/>
+	<Welcome name ="Three" userName="Third USerName"/> */}
         {/* <Message /> */}
         {/* <Counter /> */}
         {/* <Greet name ="Umaaa" userName="wornder woner"/> */}
