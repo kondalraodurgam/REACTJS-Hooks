@@ -1,0 +1,58 @@
+import React, {useState,useRef} from "react";
+import "./App.css"
+function App() {
+const inputRef = useRef(null);
+const resultRef = useRef(null);
+const [result,setResult] = useState(0);
+
+function plus(e){
+	e.preventDefault();
+	setResult((result)=>result + Number(inputRef.current.value))
+}
+
+function subtract(e){
+	e.preventDefault();
+	setResult((result)=>result-Number(inputRef.current.value));
+}
+function multiply(e){
+	e.preventDefault();
+	setResult((result)=>result*Number(inputRef.current.value));
+}
+function divide(e){
+	e.preventDefault();
+	setResult((result)=>result/Number(inputRef.current.value));
+}
+function resetInput(e){
+	e.preventDefault();
+	inputRef.current.value = 0;
+}
+function resetResult(e){
+	e.preventDefault();
+	setResult((preVal)=>preVal*0);
+}
+  return (
+    <div className="App">
+      <div>
+        <h2>Sample Working Calulator</h2>
+      </div>
+	  <form>
+		<p ref={resultRef}>{result}</p>
+      	<input 
+		pattern="[0-9]"
+		ref={inputRef}
+		placeholder="Type a number here"
+		type="Number"/>
+        <button onClick={plus}>add</button> 
+        <button onClick={subtract}>subtract</button>
+        <button onClick={multiply}>multiply</button>
+        <button onClick={divide}>divide</button> 
+        <button onClick={resetInput}>resetInput</button> 
+        <button onClick={resetResult}>resetResult</button> 
+
+	  </form>
+      
+    </div>
+  );
+}
+
+export default App;
